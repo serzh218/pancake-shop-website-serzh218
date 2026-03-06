@@ -1,0 +1,51 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-cream: #FFF8F0;
+  --color-golden: #E8A838;
+  --color-brown: #5D4037;
+  --color-caramel: #C68B59;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--color-cream);
+}
+
+.font-display {
+  font-family: 'Playfair Display', serif;
+}
+
+.bg-cream { background-color: var(--color-cream); }
+.bg-golden { background-color: var(--color-golden); }
+.bg-brown { background-color: var(--color-brown); }
+.bg-caramel { background-color: var(--color-caramel); }
+
+.text-cream { color: var(--color-cream); }
+.text-golden { color: var(--color-golden); }
+.text-brown { color: var(--color-brown); }
+.text-caramel { color: var(--color-caramel); }
+
+.border-golden { border-color: var(--color-golden); }
+
+.gradient-warm {
+  background: linear-gradient(135deg, #FFF8F0 0%, #FFE4C4 100%);
+}
+
+.shadow-warm {
+  box-shadow: 0 4px 20px rgba(232, 168, 56, 0.2);
+}
+
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(232, 168, 56, 0.3);
+}
